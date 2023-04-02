@@ -5,13 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expense App 4.0</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div class="three"></div>
-      <div class="four"></div>
+      <div class="one">
+        <h1>Budget</h1>
+        <input
+          class="inputEnterTotalAmount"
+          type="text"
+          placeholder="Enter Total Amount"
+        />
+        <button class="btnSetBudget">Set Budget</button>
+      </div>
+      <div class="two">
+        <h1>Expenses</h1>
+        <input
+          class="inputEnterTitle"
+          type="text"
+          placeholder="Enter Title of Product"
+        />
+        <input
+          class="inputEnterCost"
+          type="text"
+          placeholder="Enter Cost of Product"
+        />
+        <button class="btnCheckAmount">Check Amount</button>
+      </div>
+      <div class="three">
+        <div>
+          <p>Total Budget</p>
+          <span class="displayTotalBudget">0</span>
+        </div>
+        <div>
+          <p>Expenses</p>
+          <span class="displayExpenses">0</span>
+        </div>
+        <div>
+          <p>Balance</p>
+          <span class="displayBalance">0</span>
+        </div>
+      </div>
+      <div class="four">
+        <h1>Expense List</h1>
+        <div class="expenseList"></div>
+      </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>

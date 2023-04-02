@@ -1,0 +1,101 @@
+:root {
+  --main: rgb(0, 155, 175);
+  --background: #eee;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--background);
+  font-size: 1.8rem;
+}
+
+.container {
+  padding: 1rem;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 1rem;
+  display: block;
+
+  background-color: var(--main);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.one {
+  margin-bottom: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.one * {
+  margin-bottom: 1rem;
+}
+.two {
+  margin-bottom: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.two * {
+  margin-bottom: 1rem;
+}
+.three {
+  margin-bottom: 1rem;
+  background-color: var(--main);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.three > div {
+  text-align: center;
+}
+
+.three * {
+  margin-bottom: 1rem;
+}
+.four {
+  margin-bottom: 1rem;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.four * {
+  margin-bottom: 1rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  border-left: 4px solid var(--main);
+}
+
+.item input {
+  width: 8rem;
+}
+
+.update {
+  display: none;
+}
